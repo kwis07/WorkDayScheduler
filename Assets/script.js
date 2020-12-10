@@ -130,13 +130,18 @@ $(document).ready(function() {
       if (test) { console.log("rowColor ",nowHour24, hour); }
   
       if ( hour < nowHour24) {
-        
+
+        //if the time has passed
         if (test) { console.log("lessThan"); }
         $hourRow.css("background-color","lightgrey")
       } else if ( hour > nowHour24) {
+
+        //when it's an upcoming time
         if (test) { console.log("greaterthan"); }
         $hourRow.css("background-color","lightgreen")
       } else {
+
+        //when it's the recent time
         if (test) { console.log("eqaul"); }
         $hourRow.css("background-color","tomato")
       }
